@@ -21,6 +21,9 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'voldikss/vim-floaterm'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
 
 " Initialize plugin system
 call plug#end()
@@ -29,6 +32,10 @@ call plug#end()
 filetype plugin on
 filetype plugin indent on
 source $VIMRUNTIME/vimrc_example.vim
+set nobackup
+set nowritebackup
+set noswapfile
+set noundofile
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 let g:airline_powerline_fonts = 1
